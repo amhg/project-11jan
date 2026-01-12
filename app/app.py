@@ -7,6 +7,7 @@ def health():
     return {"status": "ok",
             "service": "auth-api",
             "version": "1.1.0"
+            "uptime": "72h"
             }
 
 @app.route("/login", methods=["GET"])

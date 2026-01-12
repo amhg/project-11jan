@@ -5,7 +5,8 @@ app = Flask(__name__)
 @app.route("/health")
 def health():
     return {"status": "ok",
-            "service": "auth-api"
+            "service": "auth-api",
+            "version": "1.1.0"
             }
 
 @app.route("/login", methods=["GET"])

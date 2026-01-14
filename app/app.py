@@ -11,7 +11,12 @@ def health():
 
 @app.route("/login", methods=["GET"])
 def login():
-    return {"message": "login page"}
+    username = request.args.get("username", "guest")
+    return {
+        "message": "login page",
+        "user": username,
+        "service": "auth-api"
+        }
 
 if __name__ == "__main__":
     app.run(debug=True)

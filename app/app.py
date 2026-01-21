@@ -20,5 +20,18 @@ def register():
 def profile():
     return {"message": "profile page"}
 
+@app.route("/logout", methods=["POST"])
+def logout():
+    return {"message": "logout page"}
+
+@app.route("/admin", methods=["GET"])
+def admin():
+    return {"message": "admin page"}
+
+@app.route("/debug", methods=["GET"])
+def debug():
+    return {"message": "debug info"}
+
+
 if __name__ == "__main__":
     app.run(debug=True)

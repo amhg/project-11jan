@@ -10,7 +10,7 @@ def health():
 
 @app.route("/login", methods=["GET"])
 def login():
-    return {"message": "BROKEN LOGIN"}
+    return {"message": "login page main"}
 
 if __name__ == "__main__":
     app.run(debug=True)

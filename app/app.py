@@ -16,5 +16,9 @@ def login():
 def register():
     return {"message": "register page"}
 
+@app.route("/profile", methods=["GET"])
+def profile():
+    return {"message": "profile page"}
+
 if __name__ == "__main__":
     app.run(debug=True)

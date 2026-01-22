@@ -14,7 +14,7 @@ def info():
 def health():
     return {
         "status": "ok",
-        "version": "1.0"
+        "version": "1.0.0"
         }
 
 if __name__ == "__main__":

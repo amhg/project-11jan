@@ -13,7 +13,10 @@ def info():
 
 @app.route("/health")
 def health():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "uptime": "stable"
+        }
 
 if __name__ == "__main__":
     app.run(debug=False)

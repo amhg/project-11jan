@@ -14,5 +14,9 @@ def login():
 def status():
     return {"status": "running"}
 
+@app.route("/register")
+def status():
+    return {"message": "register page"}
+
 if __name__ == "__main__":
     app.run(debug=True)

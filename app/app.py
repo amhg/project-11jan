@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "healthy"}
 
 @app.route("/login", methods=["GET"])
 def login():

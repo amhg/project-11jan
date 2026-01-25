@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/health")
 def health():
-    return {"status": "healthy"}
+    return {"status": "healthy new"}
 
 @app.route("/login", methods=["GET"])
 def login():
-    return {"message": "Login endpoint"}
+    return {"message": "Login endpoint updated"}
 
 @app.route("/status")
 def status():

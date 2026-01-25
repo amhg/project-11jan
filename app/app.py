@@ -10,9 +10,5 @@ def health():
 def login():
     return {"message": "login page"}
 
-@app.route("/logout", methods=["POST"])
-def logout():
-    return {"message": "logged out"}
-
 if __name__ == "__main__":
     app.run(debug=True)

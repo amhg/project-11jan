@@ -8,7 +8,7 @@ def health():
 
 @app.route("/login", methods=["GET"])
 def login():
-    return {"message": "login page v2"}
+    return {"message": "login page"}
 
 @app.route("/logout", methods=["POST"])
 def logout():

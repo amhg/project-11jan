@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 @app.route("/health")
 def health():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "uptime": "24h"
+    }
 
 @app.route("/login", methods=["GET"])
 def login():

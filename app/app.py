@@ -14,5 +14,10 @@ def login():
 def register():
     return {"message": "register page"}
 
+@app.route("/logout", methods=["GET"])
+def logout():
+    return {"message": "logout page"}
+
+
 if __name__ == "__main__":
     app.run(debug=True)

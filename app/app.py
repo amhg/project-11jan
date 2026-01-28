@@ -8,7 +8,7 @@ def health():
 
 @app.route("/login", methods=["GET"])
 def login():
-    return {"message": "login page v1"}
+    return {"message": "login page"}
 
 @app.route("/register", methods=["POST"])
 def register():

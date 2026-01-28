@@ -14,5 +14,10 @@ def login():
 def logout():
     return {"message": "logout page"}
 
+@app.route("/register", methods=["POST"])
+def register():
+    return {"message": "register page"}
+
+
 if __name__ == "__main__":
     app.run(debug=True)

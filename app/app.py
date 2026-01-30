@@ -11,7 +11,7 @@ def login():
     return {"message": "login page"}
 
 @app.route("/logout", methods=["GET"])
-def login():
+def logout():
     return {"message": "logout page"}
 
 if __name__ == "__main__":
